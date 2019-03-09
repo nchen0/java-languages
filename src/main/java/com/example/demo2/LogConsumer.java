@@ -3,8 +3,9 @@ package com.example.demo2;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.message.Message;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.stereotype.Service;
 
-// @Service // Gets Spring to run this constantly to consume the log
+@Service // Gets Spring to run this constantly to consume the log
 @Slf4j
 public class LogConsumer {
 
